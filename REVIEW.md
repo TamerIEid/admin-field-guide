@@ -9,6 +9,7 @@
 | Magento | Checked commands against Adobe guidance. Ran the bounded cron query against synthetic rows in MariaDB and checked that future and unrelated jobs were excluded. | A Commerce operator should rehearse CLI index status, scope-specific pricing and release/maintenance handling on the actual edition and deployment type. |
 | Cloudflare | Checked the procedures against Cloudflare’s DNS, cache and origin-error references. | Use a test hostname and a versioned marker to rehearse DNS rollback, cache-key behaviour and strict TLS. A zone change and edge purge still need a live rehearsal. |
 | AWS | Checked command options with AWS CLI v2 and exercised the queries against synthetic responses, including an empty vault result and a newer incomplete point. | Verify the workload’s account, permissions, recent metric transition and backup retention in a sandbox. Provider delivery and data restoration require their own evidence. |
+| [SSM access and SSH closure](aws/session-manager/README.md) | AWS CLI v2 inventory queries ran in Bash, zsh and PowerShell 7 against a local API fixture. It returned two interfaces. Removing one exact TCP 22 rule left IPv6, port-range and all-protocol grants visible. Parsed the shell blocks and verified the workstation plugin version on Linux. | Rehearse native sessions, reconnects, TCP probes and recovery on a disposable Linux, EC2 Mac and Windows Server target. macOS and Windows host commands still need native execution. |
 
 ## Review in three passes
 

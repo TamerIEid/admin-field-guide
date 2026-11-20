@@ -15,4 +15,6 @@ For a host using systemd, GNU tools and a shell with permission to read the rele
 
 **A useful pair of observations.** A load average of 8 on a 2-vCPU VM calls for a closer look. Sustained high `wa` suggests investigating storage latency. A busy `r` queue with little idle CPU points toward CPU demand. Use the service response and its normal baseline to decide urgency.
 
+**Retiring SSH on an EC2 host?** Verify native Session Manager access first. The host procedure covers both a standalone SSH service and a systemd-activated socket. [SSM access and port 22 cutover](../aws/session-manager/README.md)
+
 [Disk pressure](disk-pressure.md) · [NGINX recovery](nginx-recovery.md) · [File restore drill](restore-files.md) · [systemctl manual](https://man7.org/linux/man-pages/man1/systemctl.1.html) · [journalctl manual](https://man7.org/linux/man-pages/man1/journalctl.1.html)
